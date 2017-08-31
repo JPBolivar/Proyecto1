@@ -1,0 +1,492 @@
+Analysis & Synthesis report for SimAluREG
+Mon Aug 28 14:33:37 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Parameter Settings for User Entity Instance: Top-level Entity: |AluREG
+ 11. Parameter Settings for User Entity Instance: reg_file:GPRF_Inst
+ 12. Parameter Settings for User Entity Instance: io_reg_file:IORegs_Inst
+ 13. Port Connectivity Checks: "alu_avr:ALU_Inst"
+ 14. Port Connectivity Checks: "io_reg_file:IORegs_Inst"
+ 15. Port Connectivity Checks: "reg_file:GPRF_Inst"
+ 16. Post-Synthesis Netlist Statistics for Top Partition
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++---------------------------------+---------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Mon Aug 28 14:33:37 2017       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                   ; SimAluREG                                   ;
+; Top-level Entity Name           ; AluREG                                      ;
+; Family                          ; Cyclone V                                   ;
+; Logic utilization (in ALMs)     ; N/A                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 48                                          ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0                                           ;
+; Total DSP Blocks                ; 0                                           ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0                                           ;
+; Total DLLs                      ; 0                                           ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; AluREG             ; SimAluREG          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                           ; Library ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+; lib/reg_file.v                   ; yes             ; User Verilog HDL File  ; C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v    ;         ;
+; lib/io_reg_file.v                ; yes             ; User Verilog HDL File  ; C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/io_reg_file.v ;         ;
+; lib/alu_avr.v                    ; yes             ; User Verilog HDL File  ; C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/alu_avr.v     ;         ;
+; AluREG.v                         ; yes             ; User Verilog HDL File  ; C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v          ;         ;
++----------------------------------+-----------------+------------------------+------------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                       ;
++---------------------------------------------+-------------------------------------+
+; Resource                                    ; Usage                               ;
++---------------------------------------------+-------------------------------------+
+; Estimate of Logic utilization (ALMs needed) ; 1                                   ;
+;                                             ;                                     ;
+; Combinational ALUT usage for logic          ; 2                                   ;
+;     -- 7 input functions                    ; 0                                   ;
+;     -- 6 input functions                    ; 0                                   ;
+;     -- 5 input functions                    ; 0                                   ;
+;     -- 4 input functions                    ; 0                                   ;
+;     -- <=3 input functions                  ; 2                                   ;
+;                                             ;                                     ;
+; Dedicated logic registers                   ; 0                                   ;
+;                                             ;                                     ;
+; I/O pins                                    ; 48                                  ;
+;                                             ;                                     ;
+; Total DSP Blocks                            ; 0                                   ;
+;                                             ;                                     ;
+; Maximum fan-out node                        ; alu_avr:ALU_Inst|alu_data_out_int~1 ;
+; Maximum fan-out                             ; 7                                   ;
+; Total fan-out                               ; 61                                  ;
+; Average fan-out                             ; 0.62                                ;
++---------------------------------------------+-------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name      ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------+--------------+
+; |AluREG                    ; 2 (0)               ; 0 (0)                     ; 0                 ; 0          ; 48   ; 0            ; |AluREG                  ; AluREG      ; work         ;
+;    |alu_avr:ALU_Inst|      ; 2 (2)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |AluREG|alu_avr:ALU_Inst ; alu_avr     ; work         ;
++----------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                          ;
++---------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+
+; Register name                                                                                                                         ; Reason for Removal                                  ;
++---------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+
+; reg_file:GPRF_Inst|gprf_current_vect[8,16,24,32,40,48,56,64,72,80,88,96,104,112,120,128,136,144,152,160,168,176,184,192,200,208..255] ; Lost fanout                                         ;
+; io_reg_file:IORegs_Inst|sreg_current[1..7]                                                                                            ; Merged with io_reg_file:IORegs_Inst|sreg_current[0] ;
+; reg_file:GPRF_Inst|gprf_current_vect[0]                                                                                               ; Merged with io_reg_file:IORegs_Inst|sreg_current[0] ;
+; io_reg_file:IORegs_Inst|sreg_current[0]                                                                                               ; Stuck at GND due to stuck port data_in              ;
+; Total Number of Removed Registers = 82                                                                                                ;                                                     ;
++---------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |AluREG ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; use_rst        ; 1     ; Signed Integer                                ;
+; pc22b          ; 0     ; Signed Integer                                ;
+; eind_width     ; 1     ; Signed Integer                                ;
+; rampz_width    ; 1     ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: reg_file:GPRF_Inst ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; use_rst        ; 1     ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: io_reg_file:IORegs_Inst ;
++-----------------+--------+-------------------------------------------+
+; Parameter Name  ; Value  ; Type                                      ;
++-----------------+--------+-------------------------------------------+
+; pc22b           ; 0      ; Signed Integer                            ;
+; eind_width      ; 1      ; Signed Integer                            ;
+; rampz_width     ; 1      ; Signed Integer                            ;
+; P_SPL_Address   ; 111101 ; Unsigned Binary                           ;
+; P_SPH_Address   ; 111110 ; Unsigned Binary                           ;
+; P_SREG_Address  ; 111111 ; Unsigned Binary                           ;
+; P_RAMPZ_Address ; 111011 ; Unsigned Binary                           ;
+; P_EIND_Address  ; 111100 ; Unsigned Binary                           ;
++-----------------+--------+-------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu_avr:ALU_Inst"                                                                                                                                               ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port           ; Type   ; Severity ; Details                                                                                                                                               ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; alu_data_r_in  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "alu_data_r_in[7..1]" will be connected to GND. ;
+; alu_data_d_in  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "alu_data_d_in[7..1]" will be connected to GND. ;
+; alu_c_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; alu_z_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; alu_n_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; alu_v_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; alu_s_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; alu_h_flag_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
++----------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "io_reg_file:IORegs_Inst"                                                                                                                                       ;
++---------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                               ;
++---------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; adr           ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (6 bits) it drives.  Extra input bit(s) "adr[5..1]" will be connected to GND.           ;
+; dbusout       ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "dbusout[7..1]" will be connected to GND.       ;
+; sreg_fl_wr_en ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "sreg_fl_wr_en[7..1]" will be connected to GND. ;
+; spl_out       ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "spl_out[7..1]" have no fanouts                            ;
+; spl_out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; sph_out       ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "sph_out[7..1]" have no fanouts                            ;
+; sph_out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; rampz_out     ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "rampz_out[7..1]" have no fanouts                          ;
+; rampz_out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
+; eind_out      ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "eind_out[7..1]" have no fanouts                           ;
+; eind_out      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                   ;
++---------------+--------+----------+-------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "reg_file:GPRF_Inst"                                                                                                                                           ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                                                                                              ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+; reg_rd_in     ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "reg_rd_in[7..1]" will be connected to GND.    ;
+; reg_rd_out    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "reg_rd_out[7..1]" have no fanouts                        ;
+; reg_rd_adr    ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "reg_rd_adr[4..1]" will be connected to GND.   ;
+; reg_rr_out    ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "reg_rr_out[7..1]" have no fanouts                        ;
+; reg_rr_adr    ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (5 bits) it drives.  Extra input bit(s) "reg_rr_adr[4..1]" will be connected to GND.   ;
+; reg_h_out     ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "reg_h_out[15..1]" have no fanouts                       ;
+; reg_h_out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                  ;
+; reg_h_adr     ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (3 bits) it drives.  Extra input bit(s) "reg_h_adr[2..1]" will be connected to GND.    ;
+; reg_z_out     ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "reg_z_out[15..1]" have no fanouts                       ;
+; reg_z_out     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                  ;
+; reg_rd_hb_in  ; Input  ; Warning  ; Input port expression (1 bits) is smaller than the input port (8 bits) it drives.  Extra input bit(s) "reg_rd_hb_in[7..1]" will be connected to GND. ;
+; reg_rr_hb_out ; Output ; Warning  ; Output or bidir port (8 bits) is wider than the port expression (1 bits) it drives; bit(s) "reg_rr_hb_out[7..1]" have no fanouts                     ;
+; reg_rr_hb_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                  ;
+; spm_out       ; Output ; Warning  ; Output or bidir port (16 bits) is wider than the port expression (1 bits) it drives; bit(s) "spm_out[15..1]" have no fanouts                         ;
+; spm_out       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                                                                  ;
++---------------+--------+----------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_lcell_comb     ; 4                           ;
+;     normal            ; 4                           ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 1                           ;
+; boundary_port         ; 48                          ;
+;                       ;                             ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.43                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Mon Aug 28 14:33:20 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SimAluREG -c SimAluREG
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file lib/reg_file.v
+    Info (12023): Found entity 1: reg_file File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v Line: 15
+Info (12021): Found 1 design units, including 1 entities, in source file lib/io_reg_file.v
+    Info (12023): Found entity 1: io_reg_file File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/io_reg_file.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file lib/alu_avr.v
+    Info (12023): Found entity 1: alu_avr File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/alu_avr.v Line: 14
+Info (12021): Found 1 design units, including 1 entities, in source file alureg.v
+    Info (12023): Found entity 1: AluREG File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 5
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(192): created implicit net for "reg_rd_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 192
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(193): created implicit net for "reg_rd_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 193
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(194): created implicit net for "reg_rd_adr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 194
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(195): created implicit net for "reg_rr_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 195
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(196): created implicit net for "reg_rr_adr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 196
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(197): created implicit net for "reg_rd_wr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 197
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(198): created implicit net for "post_inc" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 198
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(199): created implicit net for "pre_dec" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 199
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(200): created implicit net for "reg_h_wr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 200
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(201): created implicit net for "reg_h_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 201
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(202): created implicit net for "reg_h_adr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 202
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(203): created implicit net for "reg_z_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 203
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(204): created implicit net for "w_op" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 204
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(205): created implicit net for "reg_rd_hb_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 205
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(206): created implicit net for "reg_rr_hb_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 206
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(207): created implicit net for "spm_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 207
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(218): created implicit net for "adr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 218
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(219): created implicit net for "iowe" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 219
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(220): created implicit net for "dbusout" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 220
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(224): created implicit net for "sreg_fl_wr_en" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 224
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(225): created implicit net for "spl_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 225
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(226): created implicit net for "sph_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 226
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(227): created implicit net for "sp_ndown_up" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 227
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(228): created implicit net for "sp_en" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 228
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(229): created implicit net for "rampz_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 229
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(230): created implicit net for "eind_out" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 230
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(268): created implicit net for "alu_c_flag_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 268
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(269): created implicit net for "alu_z_flag_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 269
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(270): created implicit net for "alu_n_flag_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 270
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(271): created implicit net for "alu_v_flag_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 271
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(272): created implicit net for "alu_s_flag_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 272
+Warning (10236): Verilog HDL Implicit Net warning at AluREG.v(273): created implicit net for "alu_h_flag_in" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 273
+Info (12127): Elaborating entity "AluREG" for the top level hierarchy
+Info (12128): Elaborating entity "reg_file" for hierarchy "reg_file:GPRF_Inst" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 207
+Warning (10230): Verilog HDL assignment warning at reg_file.v(122): truncated value with size 32 to match size of target (16) File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v Line: 122
+Warning (10230): Verilog HDL assignment warning at reg_file.v(123): truncated value with size 32 to match size of target (16) File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v Line: 123
+Info (10264): Verilog HDL Case Statement information at reg_file.v(138): all case item expressions in this case statement are onehot File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v Line: 138
+Info (10264): Verilog HDL Case Statement information at reg_file.v(174): all case item expressions in this case statement are onehot File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v Line: 174
+Warning (10230): Verilog HDL assignment warning at reg_file.v(201): truncated value with size 32 to match size of target (5) File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/lib/reg_file.v Line: 201
+Info (12128): Elaborating entity "io_reg_file" for hierarchy "io_reg_file:IORegs_Inst" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 230
+Info (12128): Elaborating entity "alu_avr" for hierarchy "alu_avr:ALU_Inst" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 273
+Warning (12241): 3 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "sreg_out[0]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[1]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[2]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[3]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[4]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[5]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[6]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+    Warning (13410): Pin "sreg_out[7]" is stuck at GND File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 102
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 73 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 29 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "cp2" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 49
+    Warning (15610): No output dependent on input pin "cp2en" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 50
+    Warning (15610): No output dependent on input pin "ireset" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 51
+    Warning (15610): No output dependent on input pin "idc_add" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 54
+    Warning (15610): No output dependent on input pin "idc_adc" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 55
+    Warning (15610): No output dependent on input pin "idc_adiw" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 56
+    Warning (15610): No output dependent on input pin "idc_sub" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 57
+    Warning (15610): No output dependent on input pin "idc_subi" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 58
+    Warning (15610): No output dependent on input pin "idc_sbc" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 59
+    Warning (15610): No output dependent on input pin "idc_sbci" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 60
+    Warning (15610): No output dependent on input pin "idc_sbiw" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 61
+    Warning (15610): No output dependent on input pin "adiw_st" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 62
+    Warning (15610): No output dependent on input pin "sbiw_st" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 63
+    Warning (15610): No output dependent on input pin "idc_and" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 64
+    Warning (15610): No output dependent on input pin "idc_andi" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 65
+    Warning (15610): No output dependent on input pin "idc_or" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 66
+    Warning (15610): No output dependent on input pin "idc_ori" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 67
+    Warning (15610): No output dependent on input pin "idc_eor" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 68
+    Warning (15610): No output dependent on input pin "idc_neg" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 70
+    Warning (15610): No output dependent on input pin "idc_cp" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 73
+    Warning (15610): No output dependent on input pin "idc_cpc" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 74
+    Warning (15610): No output dependent on input pin "idc_cpi" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 75
+    Warning (15610): No output dependent on input pin "idc_cpse" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 76
+    Warning (15610): No output dependent on input pin "idc_lsr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 77
+    Warning (15610): No output dependent on input pin "idc_ror" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 78
+    Warning (15610): No output dependent on input pin "idc_asr" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 79
+    Warning (15610): No output dependent on input pin "idc_swap" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 80
+    Warning (15610): No output dependent on input pin "mc" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 82
+    Warning (15610): No output dependent on input pin "mz" File: C:/Users/Navegante/Desktop/Proyecto 1/Avance1/AluREG/AluREG.v Line: 83
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 32 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 2 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 76 warnings
+    Info: Peak virtual memory: 656 megabytes
+    Info: Processing ended: Mon Aug 28 14:33:37 2017
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:38
+
+
