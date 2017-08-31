@@ -1,0 +1,361 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/jeferson/Documentos/quartusprojects/AVR_109/simulation/modelsim
+vavr109
+Z1 !s110 1504012845
+!i10b 1
+!s100 22>Se6XShT=?l94;eNHl_3
+Ijf84SfcVF3YZM[EoCRO0L1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1504012044
+8/home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+F/home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+L0 6
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1504012845.000000
+!s107 /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jeferson/Documentos/quartusprojects/AVR_109|/home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+/home/jeferson/Documentos/quartusprojects/AVR_109
+Z7 tCvgOpt 0
+vavr109rx
+R1
+!i10b 1
+!s100 l^W4jP68BQzc?o`B7X:;D3
+I7LzZ;S5]NcC=KTF^<DWJ51
+R2
+R0
+w1503594552
+8/home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v
+F/home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jeferson/Documentos/quartusprojects/AVR_109|/home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v|
+!i113 1
+R5
+R6
+R7
+vavr109tx
+R1
+!i10b 1
+!s100 Y^X67;7N]mXWL_K><Ak`j0
+I;nlX?C7YEBYVoG]R=Kbcd1
+R2
+R0
+w1503594555
+8/home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v
+F/home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/jeferson/Documentos/quartusprojects/AVR_109|/home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v|
+!i113 1
+R5
+R6
+R7
+Eavr_109
+Z8 w1504012779
+Z9 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z10 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z11 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z12 8/home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd
+Z13 F/home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd
+l0
+L8
+V3bTmYAgTAbM]>^GI7;LGP0
+!s100 QF:94=mPa=j7hSc5A42>g2
+Z14 OV;C;10.5b;63
+31
+R1
+!i10b 1
+R4
+Z15 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd|
+Z16 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd|
+!i113 1
+Z17 o-93 -work work
+Z18 tExplicit 1 CvgOpt 0
+Artl
+R9
+R10
+R11
+DEx4 work 7 avr_109 0 22 3bTmYAgTAbM]>^GI7;LGP0
+l62
+L27
+V]HEC5>:jk[T:FlWbhilHB2
+!s100 CSUVZMQQWO@na4jCB]U=a0
+R14
+31
+R1
+!i10b 1
+R4
+R15
+R16
+!i113 1
+R17
+R18
+Ecodificador
+Z19 w1495478548
+R9
+R10
+R11
+R0
+Z20 8/home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd
+Z21 F/home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd
+l0
+L8
+VmUEjiUSjPe9?1aO:]dDk93
+!s100 :Gi0ni`ZQVIT1O>HC7<k;3
+R14
+31
+R1
+!i10b 1
+R4
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd|
+Z23 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd|
+!i113 1
+R17
+R18
+Artl
+R9
+R10
+R11
+DEx4 work 11 codificador 0 22 mUEjiUSjPe9?1aO:]dDk93
+l20
+L16
+VzSfk>Nmg1jW45GClBk5]o0
+!s100 Y[B>J:dG24<EaG]AYWJ?I2
+R14
+31
+R1
+!i10b 1
+R4
+R22
+R23
+!i113 1
+R17
+R18
+Econtador104us
+Z24 w1494730677
+R9
+R10
+R11
+R0
+Z25 8/home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd
+Z26 F/home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd
+l0
+L8
+VES7:[1A`XGl=5b4jBE2>Y2
+!s100 gL>zR@Q[6kEBHZF^9GhDh3
+R14
+31
+R1
+!i10b 1
+R4
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd|
+Z28 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd|
+!i113 1
+R17
+R18
+Artl
+R9
+R10
+R11
+DEx4 work 13 contador104us 0 22 ES7:[1A`XGl=5b4jBE2>Y2
+l42
+L22
+VL5V2Lf5i[Ah;hZ2YlTQ3N2
+!s100 0Y==V:KhJb7=51aJ_FTKa1
+R14
+31
+R1
+!i10b 1
+R4
+R27
+R28
+!i113 1
+R17
+R18
+Eregistro
+Z29 w1494723484
+R9
+R10
+R11
+R0
+Z30 8/home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd
+Z31 F/home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd
+l0
+L8
+VoZhPJA0Uz4?KZ_c2di`Xz1
+!s100 3^I0KMPTTz1bg4U]1QDJY0
+R14
+31
+R1
+!i10b 1
+R4
+Z32 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd|
+Z33 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd|
+!i113 1
+R17
+R18
+Artl
+R9
+R10
+R11
+DEx4 work 8 registro 0 22 oZhPJA0Uz4?KZ_c2di`Xz1
+l24
+L23
+VHeW?517WZ4d;V;`ndI4Q`2
+!s100 ?JFi=E@njFZE9[d8GUa:E1
+R14
+31
+R1
+!i10b 1
+R4
+R32
+R33
+!i113 1
+R17
+R18
+Eregistro8
+Z34 w1494728563
+R9
+R10
+R11
+R0
+Z35 8/home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd
+Z36 F/home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd
+l0
+L8
+VCAb=TnRS6I=ciZKN_Olg^1
+!s100 ec`ml:B=RRFN<h`E@dhJo2
+R14
+31
+R1
+!i10b 1
+R4
+Z37 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd|
+Z38 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd|
+!i113 1
+R17
+R18
+Artl
+R9
+R10
+R11
+DEx4 work 9 registro8 0 22 CAb=TnRS6I=ciZKN_Olg^1
+l21
+L20
+V]oKCc4cmiXW][;lfT9`:N3
+!s100 O^gV5gd]OBDmQ^>khimHP0
+R14
+31
+R1
+!i10b 1
+R4
+R37
+R38
+!i113 1
+R17
+R18
+Eusart_trans
+Z39 w1504009351
+R9
+R10
+R11
+R0
+Z40 8/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd
+Z41 F/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd
+l0
+L8
+VZ4KVlO>JYHUOHn@K3iP@A0
+!s100 _125I>WR@6ji9W7WP;E4Y2
+R14
+31
+R1
+!i10b 1
+R4
+Z42 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd|
+Z43 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd|
+!i113 1
+R17
+R18
+Artl
+R9
+R10
+R11
+DEx4 work 11 usart_trans 0 22 Z4KVlO>JYHUOHn@K3iP@A0
+l79
+L27
+VC2Ff8fXN<`bce1YlZJ=od3
+!s100 kdLhUI3o7U1;^_oLH_Pa@3
+R14
+31
+R1
+!i10b 1
+R4
+R42
+R43
+!i113 1
+R17
+R18
+Eusart_trans_sm
+Z44 w1494730256
+R10
+R11
+R0
+Z45 8/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd
+Z46 F/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd
+l0
+L7
+VdEe^jIc9V[FfKfG20Se^O0
+!s100 197n6>9?8LzVFK>h9iWWb3
+R14
+31
+R1
+!i10b 1
+R4
+Z47 !s90 -reportprogress|300|-93|-work|work|/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd|
+Z48 !s107 /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd|
+!i113 1
+R17
+R18
+Artl
+R10
+R11
+DEx4 work 14 usart_trans_sm 0 22 dEe^jIc9V[FfKfG20Se^O0
+l24
+L19
+VZGRMQfW>ml9HX=z0L1VKe0
+!s100 TJI]@HW7AzVJGfRnZ7?bG2
+R14
+31
+R1
+!i10b 1
+R4
+R47
+R48
+!i113 1
+R17
+R18

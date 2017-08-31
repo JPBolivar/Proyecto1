@@ -1,0 +1,360 @@
+Analysis & Elaboration report for AVR_109
+Tue Aug 29 08:19:54 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: usart_trans:f1
+  5. Parameter Settings for User Entity Instance: usart_trans:f1|contador104us:f4
+  6. Parameter Settings for User Entity Instance: usart_trans:f1|contador104us:f4|registro:f1
+  7. Parameter Settings for User Entity Instance: avr109:f2
+  8. Parameter Settings for User Entity Instance: avr109:f2|avr109tx:avr109tx_inst
+  9. Parameter Settings for User Entity Instance: avr109:f2|avr109rx:avr109rx_inst
+ 10. Analysis & Elaboration Settings
+ 11. Port Connectivity Checks: "avr109:f2|avr109rx:avr109rx_inst"
+ 12. Port Connectivity Checks: "avr109:f2"
+ 13. Analysis & Elaboration Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-----------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                              ;
++-------------------------------+---------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Tue Aug 29 08:19:54 2017       ;
+; Quartus Prime Version         ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+; Revision Name                 ; AVR_109                                     ;
+; Top-level Entity Name         ; AVR_109                                     ;
+; Family                        ; Cyclone V                                   ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                   ;
+; Total registers               ; N/A until Partition Merge                   ;
+; Total pins                    ; N/A until Partition Merge                   ;
+; Total virtual pins            ; N/A until Partition Merge                   ;
+; Total block memory bits       ; N/A until Partition Merge                   ;
+; Total PLLs                    ; N/A until Partition Merge                   ;
+; Total DLLs                    ; N/A until Partition Merge                   ;
++-------------------------------+---------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: usart_trans:f1 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; DATA_WIDTH     ; 7     ; Signed Integer                     ;
+; MAX_NUM        ; 105   ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: usart_trans:f1|contador104us:f4 ;
++----------------+-------+-----------------------------------------------------+
+; Parameter Name ; Value ; Type                                                ;
++----------------+-------+-----------------------------------------------------+
+; data_width     ; 7     ; Signed Integer                                      ;
+; max_num        ; 105   ; Signed Integer                                      ;
++----------------+-------+-----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: usart_trans:f1|contador104us:f4|registro:f1 ;
++----------------+-------+-----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                            ;
++----------------+-------+-----------------------------------------------------------------+
+; data_width     ; 7     ; Signed Integer                                                  ;
++----------------+-------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------+
+; Parameter Settings for User Entity Instance: avr109:f2 ;
++----------------+---------+-----------------------------+
+; Parameter Name ; Value   ; Type                        ;
++----------------+---------+-----------------------------+
+; CLK_FREQUENCY  ; 1000000 ; Signed Integer              ;
+; BAUD_RATE      ; 9600    ; Signed Integer              ;
+; VERSION_HIGH   ; 1       ; String                      ;
+; VERSION_LOW    ; 0       ; String                      ;
++----------------+---------+-----------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: avr109:f2|avr109tx:avr109tx_inst ;
++----------------+---------+----------------------------------------------------+
+; Parameter Name ; Value   ; Type                                               ;
++----------------+---------+----------------------------------------------------+
+; CLK_FREQUENCY  ; 1000000 ; Signed Integer                                     ;
+; BAUD_RATE      ; 9600    ; Signed Integer                                     ;
++----------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: avr109:f2|avr109rx:avr109rx_inst ;
++----------------+---------+----------------------------------------------------+
+; Parameter Name ; Value   ; Type                                               ;
++----------------+---------+----------------------------------------------------+
+; CLK_FREQUENCY  ; 1000000 ; Signed Integer                                     ;
+; BAUD_RATE      ; 9600    ; Signed Integer                                     ;
++----------------+---------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; AVR_109            ; AVR_109            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                               ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization During Synthesis                                   ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "avr109:f2|avr109rx:avr109rx_inst" ;
++------------+-------+----------+------------------------------+
+; Port       ; Type  ; Severity ; Details                      ;
++------------+-------+----------+------------------------------+
+; rx_enabled ; Input ; Info     ; Stuck at VCC                 ;
++------------+-------+----------+------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "avr109:f2"                                                                                                                                          ;
++--------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                                                                                      ;
++--------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; prog_data_in ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++--------------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+    Info: Processing started: Tue Aug 29 08:19:40 2017
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off AVR_109 -c AVR_109 --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file usart_trans_sm.vhd
+    Info (12022): Found design unit 1: usart_trans_sm-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd Line: 19
+    Info (12023): Found entity 1: usart_trans_sm File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file contador104us.vhd
+    Info (12022): Found design unit 1: contador104us-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd Line: 22
+    Info (12023): Found entity 1: contador104us File: /home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file registro8.vhd
+    Info (12022): Found design unit 1: registro8-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd Line: 20
+    Info (12023): Found entity 1: registro8 File: /home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file registro.vhd
+    Info (12022): Found design unit 1: registro-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd Line: 23
+    Info (12023): Found entity 1: registro File: /home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file usart_trans.vhd
+    Info (12022): Found design unit 1: usart_trans-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd Line: 27
+    Info (12023): Found entity 1: usart_trans File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file codificador.vhd
+    Info (12022): Found design unit 1: codificador-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd Line: 16
+    Info (12023): Found entity 1: codificador File: /home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file avr109tx.v
+    Info (12023): Found entity 1: avr109tx File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file avr109rx.v
+    Info (12023): Found entity 1: avr109rx File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file avr109.v
+    Info (12023): Found entity 1: avr109 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file AVR_109.vhd
+    Info (12022): Found design unit 1: AVR_109-rtl File: /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd Line: 27
+    Info (12023): Found entity 1: AVR_109 File: /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd Line: 8
+Info (12127): Elaborating entity "AVR_109" for the top level hierarchy
+Info (12128): Elaborating entity "usart_trans" for hierarchy "usart_trans:f1" File: /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd Line: 63
+Info (12128): Elaborating entity "registro8" for hierarchy "usart_trans:f1|registro8:f1" File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd Line: 80
+Info (12128): Elaborating entity "codificador" for hierarchy "usart_trans:f1|codificador:f2" File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd Line: 89
+Info (12128): Elaborating entity "usart_trans_sm" for hierarchy "usart_trans:f1|usart_trans_sm:f3" File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd Line: 95
+Info (12128): Elaborating entity "contador104us" for hierarchy "usart_trans:f1|contador104us:f4" File: /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd Line: 105
+Info (12128): Elaborating entity "registro" for hierarchy "usart_trans:f1|contador104us:f4|registro:f1" File: /home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd Line: 44
+Info (12128): Elaborating entity "avr109" for hierarchy "avr109:f2" File: /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd Line: 73
+Warning (10230): Verilog HDL assignment warning at avr109.v(107): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 107
+Warning (10230): Verilog HDL assignment warning at avr109.v(113): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 113
+Warning (10230): Verilog HDL assignment warning at avr109.v(115): truncated value with size 32 to match size of target (3) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 115
+Warning (10230): Verilog HDL assignment warning at avr109.v(117): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 117
+Warning (10230): Verilog HDL assignment warning at avr109.v(126): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 126
+Warning (10230): Verilog HDL assignment warning at avr109.v(127): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 127
+Warning (10230): Verilog HDL assignment warning at avr109.v(128): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 128
+Warning (10230): Verilog HDL assignment warning at avr109.v(131): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 131
+Warning (10230): Verilog HDL assignment warning at avr109.v(135): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 135
+Warning (10230): Verilog HDL assignment warning at avr109.v(137): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 137
+Warning (10230): Verilog HDL assignment warning at avr109.v(138): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 138
+Warning (10230): Verilog HDL assignment warning at avr109.v(139): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 139
+Warning (10230): Verilog HDL assignment warning at avr109.v(140): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 140
+Warning (10230): Verilog HDL assignment warning at avr109.v(141): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 141
+Warning (10230): Verilog HDL assignment warning at avr109.v(142): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 142
+Warning (10230): Verilog HDL assignment warning at avr109.v(143): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 143
+Warning (10230): Verilog HDL assignment warning at avr109.v(152): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 152
+Warning (10230): Verilog HDL assignment warning at avr109.v(160): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 160
+Warning (10230): Verilog HDL assignment warning at avr109.v(168): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 168
+Warning (10230): Verilog HDL assignment warning at avr109.v(176): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 176
+Warning (10230): Verilog HDL assignment warning at avr109.v(184): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 184
+Warning (10230): Verilog HDL assignment warning at avr109.v(191): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 191
+Warning (10230): Verilog HDL assignment warning at avr109.v(198): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 198
+Warning (10230): Verilog HDL assignment warning at avr109.v(206): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 206
+Warning (10230): Verilog HDL assignment warning at avr109.v(212): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 212
+Warning (10230): Verilog HDL assignment warning at avr109.v(219): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 219
+Warning (10230): Verilog HDL assignment warning at avr109.v(226): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 226
+Warning (10230): Verilog HDL assignment warning at avr109.v(232): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 232
+Warning (10230): Verilog HDL assignment warning at avr109.v(239): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 239
+Warning (10230): Verilog HDL assignment warning at avr109.v(241): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 241
+Warning (10230): Verilog HDL assignment warning at avr109.v(247): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 247
+Warning (10230): Verilog HDL assignment warning at avr109.v(253): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 253
+Warning (10230): Verilog HDL assignment warning at avr109.v(255): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 255
+Warning (10230): Verilog HDL assignment warning at avr109.v(260): truncated value with size 32 to match size of target (8) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 260
+Warning (10230): Verilog HDL assignment warning at avr109.v(261): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 261
+Warning (10230): Verilog HDL assignment warning at avr109.v(266): truncated value with size 32 to match size of target (16) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 266
+Warning (10230): Verilog HDL assignment warning at avr109.v(267): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 267
+Warning (10230): Verilog HDL assignment warning at avr109.v(273): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 273
+Warning (10230): Verilog HDL assignment warning at avr109.v(275): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 275
+Warning (10230): Verilog HDL assignment warning at avr109.v(281): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 281
+Warning (10230): Verilog HDL assignment warning at avr109.v(287): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 287
+Warning (10230): Verilog HDL assignment warning at avr109.v(289): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 289
+Warning (10230): Verilog HDL assignment warning at avr109.v(296): truncated value with size 32 to match size of target (8) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 296
+Warning (10230): Verilog HDL assignment warning at avr109.v(297): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 297
+Warning (10230): Verilog HDL assignment warning at avr109.v(301): truncated value with size 32 to match size of target (16) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 301
+Warning (10230): Verilog HDL assignment warning at avr109.v(302): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 302
+Warning (10230): Verilog HDL assignment warning at avr109.v(309): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 309
+Warning (10230): Verilog HDL assignment warning at avr109.v(314): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 314
+Warning (10270): Verilog HDL Case Statement warning at avr109.v(101): incomplete case statement has no default case item File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 101
+Warning (10230): Verilog HDL assignment warning at avr109.v(324): truncated value with size 32 to match size of target (5) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 324
+Info (12128): Elaborating entity "avr109tx" for hierarchy "avr109:f2|avr109tx:avr109tx_inst" File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 83
+Warning (10230): Verilog HDL assignment warning at avr109tx.v(43): truncated value with size 32 to match size of target (4) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v Line: 43
+Warning (10230): Verilog HDL assignment warning at avr109tx.v(46): truncated value with size 32 to match size of target (7) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v Line: 46
+Info (12128): Elaborating entity "avr109rx" for hierarchy "avr109:f2|avr109rx:avr109rx_inst" File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v Line: 88
+Warning (10230): Verilog HDL assignment warning at avr109rx.v(48): truncated value with size 32 to match size of target (4) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v Line: 48
+Warning (10230): Verilog HDL assignment warning at avr109rx.v(52): truncated value with size 32 to match size of target (7) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v Line: 52
+Warning (10230): Verilog HDL assignment warning at avr109rx.v(57): truncated value with size 32 to match size of target (7) File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v Line: 57
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 57 warnings
+    Info: Peak virtual memory: 1335 megabytes
+    Info: Processing ended: Tue Aug 29 08:19:54 2017
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:34
+
+

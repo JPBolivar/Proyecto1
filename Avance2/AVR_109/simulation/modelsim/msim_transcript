@@ -1,0 +1,377 @@
+# do AVR_109_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/jeferson/intelFPGA_lite/17.0/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/jeferson/Documentos/quartusprojects/AVR_109 {/home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jeferson/Documentos/quartusprojects/AVR_109" /home/jeferson/Documentos/quartusprojects/AVR_109/avr109tx.v 
+# -- Compiling module avr109tx
+# 
+# Top level modules:
+# 	avr109tx
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jeferson/Documentos/quartusprojects/AVR_109 {/home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jeferson/Documentos/quartusprojects/AVR_109" /home/jeferson/Documentos/quartusprojects/AVR_109/avr109rx.v 
+# -- Compiling module avr109rx
+# 
+# Top level modules:
+# 	avr109rx
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/jeferson/Documentos/quartusprojects/AVR_109 {/home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/jeferson/Documentos/quartusprojects/AVR_109" /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v 
+# -- Compiling module avr109
+# 
+# Top level modules:
+# 	avr109
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans_sm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity usart_trans_sm
+# -- Compiling architecture rtl of usart_trans_sm
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/contador104us.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity contador104us
+# -- Compiling architecture rtl of contador104us
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/registro8.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registro8
+# -- Compiling architecture rtl of registro8
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/registro.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity registro
+# -- Compiling architecture rtl of registro
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/usart_trans.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity usart_trans
+# -- Compiling architecture rtl of usart_trans
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/codificador.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity codificador
+# -- Compiling architecture rtl of codificador
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:20:45 on Aug 29,2017
+# vcom -reportprogress 300 -93 -work work /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity AVR_109
+# -- Compiling architecture rtl of AVR_109
+# End time: 08:20:45 on Aug 29,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+do sim_trans.do
+# vsim -t ns AVR_109 
+# Start time: 08:20:49 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+add wave -position insertpoint  \
+sim:/avr_109/f2/avr109rx_inst/rx_data
+restart
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+run
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+run
+do sim_trans.do
+# End time: 08:27:27 on Aug 29,2017, Elapsed time: 0:06:38
+# Errors: 0, Warnings: 4
+# vsim -t ns AVR_109 
+# Start time: 08:27:27 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+# WARNING: No extended dataflow license exists
+do sim_trans.do
+# End time: 08:31:24 on Aug 29,2017, Elapsed time: 0:03:57
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:31:24 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+do sim_trans.do
+# End time: 08:32:16 on Aug 29,2017, Elapsed time: 0:00:52
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:32:16 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+do sim_trans.do
+# End time: 08:37:17 on Aug 29,2017, Elapsed time: 0:05:01
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:37:17 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+do sim_trans.do
+# End time: 08:41:37 on Aug 29,2017, Elapsed time: 0:04:20
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:41:37 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+do sim_trans.do
+# End time: 08:42:32 on Aug 29,2017, Elapsed time: 0:00:55
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:42:32 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+do sim_trans.do
+# End time: 08:53:49 on Aug 29,2017, Elapsed time: 0:11:17
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:53:49 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+do sim_trans.do
+# End time: 08:55:50 on Aug 29,2017, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:55:50 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+run
+run
+do sim_trans.do
+# End time: 08:56:40 on Aug 29,2017, Elapsed time: 0:00:50
+# Errors: 0, Warnings: 3
+# vsim -t ns AVR_109 
+# Start time: 08:56:40 on Aug 29,2017
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.avr_109(rtl)
+# Loading work.usart_trans(rtl)
+# Loading work.registro8(rtl)
+# Loading work.codificador(rtl)
+# Loading work.usart_trans_sm(rtl)
+# Loading work.contador104us(rtl)
+# Loading work.registro(rtl)
+# Loading work.avr109
+# Loading work.avr109tx
+# Loading work.avr109rx
+# ** Warning: (vsim-3934) /home/jeferson/Documentos/quartusprojects/AVR_109/AVR_109.vhd(87): [TFMPC] - Missing VHDL connection for formal Verilog port 'prog_data_in'.
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f2 File: /home/jeferson/Documentos/quartusprojects/AVR_109/avr109.v
+# WARNING: No extended dataflow license exists
+# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
+#    Time: 0 ns  Iteration: 0  Instance: /avr_109/f1/f4
+# End time: 10:09:08 on Aug 29,2017, Elapsed time: 1:12:28
+# Errors: 0, Warnings: 3
